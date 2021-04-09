@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activities.MedicinesActivity">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- header -->
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="90"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/ivBack"
+                        android:src="@drawable/back"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp" />
+                    <EditText
+                        android:id="@+id/etSearch"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="14dp"
+                        android:hint="Search for medicine"
+                        android:drawableRight="@android:drawable/ic_menu_search"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <requestFocus/>
+                    </EditText>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_weight="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/ivCart"
+                        android:src="@drawable/cart"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                    <TextView
+                        android:id="@+id/tvCartCnt"
+                        android:padding="2dp"
+                        android:textSize="10dp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tvResults"
+            android:padding="0dp"
+            android:text="showing 0 results"
+            android:gravity="center_vertical"
+            android:layout_weight="85"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:id="@+id/ivFilters"
+            android:src="@drawable/funnel"
+            android:layout_weight="15"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/llTop"
+        android:layout_above="@id/llBottom"
+        android:padding="10dp"
+        android:id="@+id/rvMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:padding="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/llBottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="7dp"
+            android:background="@drawable/btn_back_theme"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvAddMore"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14dp"
+                android:text="Add More"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvCheckout"
+                android:text="Checkout"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_back_theme"
+            android:text="Proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    tools:context=".activities.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="-50dp"
+        android:id="@+id/llTop1"
+        android:background="@drawable/circle_background"
+        android:layout_width="180dp"
+        android:layout_height="160dp"/>
+
+    <ScrollView
+        android:layout_above="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:padding="10dp"
+        android:layout_below="@id/llTop1"
+        android:background="@color/white"
+        android:layout_alignParentStart="true" >
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:text="Hello there!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Sign In/Sign Up"
+                android:textColor="@color/textColor"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppins_light"
+                android:text="Sign In/Sign Up to access all features of app."
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:weightSum="100"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="+91"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/textColor"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Mobile number"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <Button
+                android:onClick="login"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:background="@drawable/btn_back_theme"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="OR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="10dp"
+                android:text="By continuing you agree to our "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvTerms"
+                android:textColor="@color/colorAccent"
+                android:textSize="10dp"
+                android:text="Terms of service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="10dp"
+                android:text="and "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvPrivacy"
+                android:textColor="@color/colorAccent"
+                android:textSize="10dp"
+                android:text="Privacy &amp; Legal Policy."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

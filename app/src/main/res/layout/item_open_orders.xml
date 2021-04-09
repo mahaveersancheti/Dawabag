@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvOrderStatus"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Your order has been placed. Make online payment to process further."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvDate"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="12 March 2021"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnOpenOrder"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay"
+                android:background="@drawable/btn_back_theme"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

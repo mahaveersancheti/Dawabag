@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_margin="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/viewIndicator"
+        android:background="@color/colorPrimary"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginLeft="6dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16dp"
+            android:text="Amit Shah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14dp"
+            android:text="Order dispatched"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvDate"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="50"
+                android:text="Delivered on 12 Dec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnReorder"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:text="View Details"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

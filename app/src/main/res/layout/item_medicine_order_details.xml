@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivMedicine"
+        android:src="@drawable/product"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:layout_marginLeft="6dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/poppins_semibold"
+                    android:id="@+id/tvName"
+                    android:textColor="@color/textColor"
+                    android:textSize="14dp"
+                    android:text="Pudin hara pearls 10mg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="10dp"
+                    android:text="By USV PVT LTD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/remove"
+                android:layout_weight="0"
+                android:layout_width="0dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.ChipGroup
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:singleSelection="true"
+                android:id="@+id/chipGroup"
+                android:layout_weight="70"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:text="10 mg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.chip.ChipGroup>
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="30"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"
+                android:text="₹102"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- pricing-->
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"
+                android:text="₹102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="12dp"
+                android:text="₹102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:fontFamily="@font/poppins_light"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:text="100% off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="50"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"
+                android:text="Total: ₹102"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="Qty : 6"
+                android:layout_weight="50"
+                android:layout_gravity="right"
+                android:background="@drawable/rounded_edittext"
+                android:id="@+id/tvQty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

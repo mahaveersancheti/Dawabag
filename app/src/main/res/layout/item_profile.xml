@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:descendantFocusability = "blocksDescendants"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="95"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:src="@drawable/remove"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Need Help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/right_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+</LinearLayout>

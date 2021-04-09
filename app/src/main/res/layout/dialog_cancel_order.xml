@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Let us know the reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rgCancelOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:fontFamily="@font/poppins_light"
+            android:id="@+id/rbIncorrectAddress"
+            android:text="Incorrect address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:fontFamily="@font/poppins_light"
+            android:id="@+id/rbPurchased"
+            android:text="Purchased from somewhere else"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:fontFamily="@font/poppins_light"
+            android:id="@+id/rbDelay"
+            android:text="Delay in order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:fontFamily="@font/poppins_light"
+            android:id="@+id/rbNoCoupon"
+            android:text="Did not apply coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:fontFamily="@font/poppins_light"
+            android:id="@+id/rbWrongMedicine"
+            android:text="Wrong medicine selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:fontFamily="@font/poppins_light"
+            android:id="@+id/rbOther"
+            android:text="Other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etOther"
+        android:padding="10dp"
+        android:gravity="top"
+        android:hint="Other"
+        android:minLines="4"
+        android:background="@drawable/rounded_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

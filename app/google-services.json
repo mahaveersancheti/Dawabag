@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "753930069356",
+    "firebase_url": "https://dawabag-3cf0d.firebaseio.com",
+    "project_id": "dawabag-3cf0d",
+    "storage_bucket": "dawabag-3cf0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753930069356:android:43ded1273a14d1f46dff49",
+        "android_client_info": {
+          "package_name": "com.dawabag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753930069356-81ip36mp8a2rnfrk4ribrhdvbukmtb60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAjT7kwYph1_O5iMJ1GuYlN-QkmORnvug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753930069356-81ip36mp8a2rnfrk4ribrhdvbukmtb60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

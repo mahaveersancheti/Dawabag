@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:fontFamily="@font/poppins_light"
+        android:id="@+id/tvText"
+        android:text="Successful payment of Rs. 2750 has been received for order Id D15624. Thanks for being with us."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:gravity="right"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="10dp"
+        android:layout_marginTop="5dp"
+        android:text="27 May 2020 at 12:82 PM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
