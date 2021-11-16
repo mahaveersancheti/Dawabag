@@ -92,6 +92,8 @@ public class OtpActivity extends AppCompatActivity {
         }
         // Enter the correct url for your api service site
         String url = Config.JSON_URL + "/verify_otp";
+        Log.d("veer", url);
+        Log.d("veer", object.toString());
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, object,
                 new Response.Listener<JSONObject>() {
                     @Override
